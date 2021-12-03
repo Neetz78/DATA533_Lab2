@@ -1,7 +1,10 @@
+from recipes.NonVeg import nutrition as n
 class difficult:
     v=[]
     r=[]
     rec=""
+    ind=0
+    nut=""
     def __init__(self,x):
         self.x=x
     def select(self):
@@ -22,16 +25,16 @@ class difficult:
     def display(self):
         for i in self.x.R5:
                 if difficult.rec==i:
-                    ind=self.x[self.x['R5'] == i].index.item()
-                    print("Recipe blog link:",self.x.Y5[ind].split(" ")[0], "\n")
-                    print("Youtube video link:",self.x.Y5[ind].split(" ")[1], "\n")
+                    difficult.ind=self.x[self.x['R5'] == i].index.item()
+                    print("Recipe blog link:",self.x.Y5[difficult.ind].split(" ")[0], "\n")
+                    print("Youtube video link:",self.x.Y5[difficult.ind].split(" ")[1], "\n")
 
                     
         for i in self.x.R6:
                 if difficult.rec==i:
-                    ind=self.x[self.x['R6'] == i].index.item()
-                    print("Recipe blog link:",self.x.Y6[ind].split(" ")[0], "\n")
-                    print("Youtube video link:",self.x.Y6[ind].split(" ")[1], "\n")
+                    difficult.ind=self.x[self.x['R6'] == i].index.item()
+                    print("Recipe blog link:",self.x.Y6[difficult.ind].split(" ")[0], "\n")
+                    print("Youtube video link:",self.x.Y6[difficult.ind].split(" ")[1], "\n")
                     
 class steps(difficult):
     def __init__(self,data):
@@ -40,3 +43,7 @@ class steps(difficult):
         self.select()
         self.search()
         self.display()
+        print("Do you want to know the calorie count?")
+        difficult.nut=input("Yes or No")
+        if difficult.nut=="Yes":
+            n.display(self.x,difficult.ind)
