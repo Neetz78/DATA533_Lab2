@@ -46,4 +46,4 @@ class steps(difficult):
         print("Do you want to know the calorie count?")
         difficult.nut=input("Yes or No")
         if difficult.nut=="Yes":
-            n.display(self.x,difficult.ind)
+            n.ddisplay(self.x,difficult.rec,difficult.ind)

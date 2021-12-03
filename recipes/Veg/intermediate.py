@@ -49,4 +49,4 @@ class steps(medium):
         print("Do you want to know the calorie count?")
         medium.nut=input("Yes or No")
         if medium.nut=="Yes":
-            n.display(self.x,medium.ind)
+            n.mdisplay(self.x,medium.rec,medium.ind)
