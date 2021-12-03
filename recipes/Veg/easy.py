@@ -8,7 +8,7 @@ class easy:
         print("Please select from the below ingredients")
         easy.v=[item for item in input(f"{self.x.I[1],self.x.I[2],self.x.I[3],self.x.I[4],self.x.I[7],self.x.I[8],self.x.I[9],self.x.I[10],self.x.I[11],self.x.I[12],self.x.I[13],self.x.I[14],self.x.I[15],self.x.I[16],self.x.I[18]}:").split()]
 
-    
+
     def search(self):
         for items in easy.v:
             for i in self.x.I:
@@ -35,4 +35,11 @@ class easy:
                     
                    
     
+class steps(easy):
+    def __init__(self,data):
+        easy.__init__(self,data)
+    def seasy(self):
+        self.select()
+        self.search()
+        self.display()
     

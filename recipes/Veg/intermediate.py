@@ -36,3 +36,10 @@ class medium:
                    
     
     
+class steps(medium):
+    def __init__(self,data):
+        medium.__init__(self,data)
+    def smedium(self):
+        self.select()
+        self.search()
+        self.display()

@@ -35,4 +35,11 @@ class difficult:
                     
                    
     
+class steps(difficult):
+    def __init__(self,data):
+        difficult.__init__(self,data)
+    def sdiff(self):
+        self.select()
+        self.search()
+        self.display()
     
