@@ -1,7 +1,1 @@
-
-'''This is an initialization file'''
-
-
-
-
-
+''' This is the initialization file.'''

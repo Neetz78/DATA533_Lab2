@@ -1,7 +1,1 @@
-
-'''The recipe package'''
-
-
-
-
-
+''' This is the initialization file.'''
