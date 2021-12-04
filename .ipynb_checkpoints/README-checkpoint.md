@@ -15,7 +15,8 @@
     * Step 8: The program also prompts if the user wants to know the calories of that particular recipe.
     * Step 9: If the user enters yes, the calorie count of the dish selected is displayed.
 
-* The main package is recipes which contains which contains two sub packages Veg and Non-Veg.
+* The main package is recipes which contains which contains two sub packages Veg and Non-Veg. It also contains an initialization file and a module called recipe.
+    * The recipe module contains the the code for execution of the package.
 * The sub packages each have six modules:
     * Module veg and nonveg are used to take the level of difficulty from the user.
     * Modules easy,intermediate and difficult are used to define the difficulty level of the recipes.
@@ -27,5 +28,5 @@
             * seasy(),smedium(),sdiff() for the classes easy, medium and difficult respectively which calls the function from the respective super class to select,search and display.
     * Module nutrition displays the calorie count of the user chosen dish
 * The csv file Recipe.csv contains a list of ingredients and the recipe ideas for the ingredients with recipe links and calorie values for each dish.
-* The Code.ipynb is the main file which has the execution and importing all packages to run the program.
+* The Code.ipynb is the main file which imports recipes package and calls the function recipe using it..
 
