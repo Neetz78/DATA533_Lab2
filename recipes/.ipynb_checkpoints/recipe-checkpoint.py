@@ -30,29 +30,35 @@ def recipe():
 
     print("Please select your food preference")
     perf = input("Vegetarian or Non-Vegetarian:")
-    if perf == "Vegetarian":
+    if (perf == "Vegetarian" or perf == "Veg" or perf == "veg" or perf == "vegetarian"):
         lev = veg.level()
-        if lev == "Easy":
+        if (lev == "Easy" or lev == "easy" or lev == "e" or lev == "EASY"):
             a=e.steps(data)
             a.seasy()
-        elif lev == "Medium":
+        elif (lev == "Medium" or lev == "medium" or lev == "m" or lev == "MEDIUM"):
             a=i.steps(data)
             a.smedium()
-        else:
+        elif (lev == "Difficult" or lev == "difficult" or lev == "d" or lev == "DIFFICULT"):
             a=d.steps(data)
             a.sdiff()
+        else:
+            pass
     
-    else:
+    elif (perf == "Non-Vegetarian" or perf == "Non-Veg" or perf == "nonveg" or perf == "nonvegetarian" or perf == "NonVegetarian"):
         nlev = nveg.level()
-        if nlev == "Easy":
+        if (nlev == "Easy" or nlev == "easy" or nlev == "e" or nlev == "EASY"):
             a=ne.steps(data)
             a.seasy()
-        elif nlev == "Medium":
+        elif (nlev == "Medium" or nlev == "medium" or nlev == "m" or nlev == "MEDIUM"):
             a=ni.steps(data)
             a.smedium()
-        else:
+        elif (nlev == "Difficult" or nlev == "difficult" or nlev == "d" or nlev == "DIFFICULT"):
             a=nd.steps(data)
             a.sdiff()
+        else:
+            pass
+    else:
+        pass
 
 
 
