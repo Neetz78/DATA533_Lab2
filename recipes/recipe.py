@@ -18,7 +18,6 @@ def recipe():
      '''
     
     import pandas as pd
-    #import recipes.init as recipes
     import recipes.Veg.veg as veg
     import recipes.NonVeg.nveg as nveg
     from recipes.Veg import easy as e,intermediate as i,difficult as d 
@@ -38,7 +37,7 @@ def recipe():
         elif (lev == "Medium" or lev == "medium" or lev == "m" or lev == "MEDIUM"):
             a=i.steps(data)
             a.smedium()
-        elif (lev == "Difficult" or lev == "difficult" or lev == "d" or lev == "DIFFICULT"):
+        elif (lev == "Hard" or lev == "hard" or lev == "d" or lev == "HARD"):
             a=d.steps(data)
             a.sdiff()
         else:
@@ -52,7 +51,7 @@ def recipe():
         elif (nlev == "Medium" or nlev == "medium" or nlev == "m" or nlev == "MEDIUM"):
             a=ni.steps(data)
             a.smedium()
-        elif (nlev == "Difficult" or nlev == "difficult" or nlev == "d" or nlev == "DIFFICULT"):
+        elif (nlev == "Hard" or nlev == "hard" or nlev == "d" or nlev == "HARD"):
             a=nd.steps(data)
             a.sdiff()
         else:
