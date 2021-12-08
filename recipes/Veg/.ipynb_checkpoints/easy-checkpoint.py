@@ -27,6 +27,7 @@ class easy:
         '''
         print("Please select from the below ingredients:\n")
         easy.v=[item for item in input(f"{self.x.I[1],self.x.I[2],self.x.I[3],self.x.I[4],self.x.I[7],self.x.I[8],self.x.I[9],self.x.I[10],self.x.I[11],self.x.I[12],self.x.I[13],self.x.I[14],self.x.I[15],self.x.I[16],self.x.I[18]}:").split()]
+        return easy.v
 
 
     def search(self):
@@ -49,6 +50,7 @@ class easy:
                     easy.ind=self.x[self.x['R1'] == i].index.item()
                     print("Recipe blog link: ",self.x.Y1[easy.ind].split(" ")[0], "\n")
                     print("Youtube video link: ",self.x.Y1[easy.ind].split(" ")[1], "\n")
+                    return self.x.Y1[easy.ind]
 
                     
         for i in self.x.R2:
@@ -56,7 +58,7 @@ class easy:
                     easy.ind=self.x[self.x['R2'] == i].index.item()
                     print("Recipe blog link: ",self.x.Y2[easy.ind].split(" ")[0], "\n")
                     print("Youtube video link: ",self.x.Y2[easy.ind].split(" ")[1], "\n")
-                    
+                    return self.x.Y2[easy.ind]
         
 
                    
