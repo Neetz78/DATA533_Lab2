@@ -26,7 +26,8 @@ class easy:
         ''' Stores the ungredients chosen by the user in list v
         '''
         print("Please select from the below ingredients:\n")
-        easy.v=[item for item in input(f"{self.x.I[5],self.x.I[0],self.x.I[6],self.x.I[17]}:").split()]
+        easy.v=[item for item in input(f"{self.x.I[5],self.x.I[0],self.x.I[6],self.x.I[17],self.x.I[19]}:").split()]
+        return easy.v
 
 
     def search(self):
@@ -40,6 +41,7 @@ class easy:
                     easy.r.append(self.x.R2[a])
         print("Choose one dish from below choices:\n")
         easy.rec=input(f"{easy.r}:")
+        return easy.rec
         
     def display(self):
         ''' Displays the blog and youtube link for the user chosen recipe

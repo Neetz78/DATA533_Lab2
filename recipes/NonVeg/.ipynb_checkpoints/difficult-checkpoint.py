@@ -27,7 +27,8 @@ class difficult:
         ''' Stores the ungredients chosen by the user in list v
         '''
         print("Please select from the below ingredients:\n")
-        difficult.v=[item for item in input(f"{self.x.I[5],self.x.I[0],self.x.I[6],self.x.I[17]}:").split()]
+        difficult.v=[item for item in input(f"{self.x.I[5],self.x.I[0],self.x.I[6],self.x.I[17],self.x.I[19]}:").split()]
+        return difficult.v
 
     
     def search(self):
@@ -41,6 +42,7 @@ class difficult:
                     difficult.r.append(self.x.R6[a])
         print("Choose one dish from below choices:\n")
         difficult.rec=input(f"{difficult.r}:")
+        return difficult.rec
         
     def display(self):
         ''' Displays the blog and youtube link for the user chosen recipe

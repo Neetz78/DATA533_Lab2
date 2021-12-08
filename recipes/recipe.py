@@ -43,7 +43,7 @@ def recipe():
         else:
             pass
     
-    elif (perf == "Non-Vegetarian" or perf == "Non-Veg" or perf == "nonveg" or perf == "nonvegetarian" or perf == "NonVegetarian"):
+    elif (perf == "Non-Vegetarian" or perf == "Non-Veg" or perf == "nonveg" or perf == "nonvegetarian" or perf == "NonVegetarian" or perf == "Nonveg"):
         nlev = nveg.level()
         if (nlev == "Easy" or nlev == "easy" or nlev == "e" or nlev == "EASY"):
             a=ne.steps(data)
