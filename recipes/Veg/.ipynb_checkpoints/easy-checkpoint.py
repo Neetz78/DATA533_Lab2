@@ -41,7 +41,8 @@ class easy:
                     easy.r.append(self.x.R2[a])
         print("Choose one dish from below choices:\n")
         easy.rec=input(f"{easy.r}:")
-        
+        return easy.rec
+    
     def display(self):
         ''' Displays the blog and youtube link for the user chosen recipe
         '''
