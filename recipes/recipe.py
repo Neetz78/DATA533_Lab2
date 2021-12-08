@@ -31,13 +31,13 @@ def recipe():
     perf = input("Vegetarian or Non-Vegetarian:")
     if (perf == "Vegetarian" or perf == "Veg" or perf == "veg" or perf == "vegetarian"):
         lev = veg.level()
-        if (lev == "Easy" or lev == "easy" or lev == "e" or lev == "EASY"):
+        if (lev == "Easy" or lev == "easy" or lev == "e" or lev == "EASY" or lev=="eas"):
             a=e.steps(data)
             a.seasy()
-        elif (lev == "Medium" or lev == "medium" or lev == "m" or lev == "MEDIUM"):
+        elif (lev == "Medium" or lev == "medium" or lev == "m" or lev == "MEDIUM" or lev== "med"):
             a=i.steps(data)
             a.smedium()
-        elif (lev == "Hard" or lev == "hard" or lev == "d" or lev == "HARD"):
+        elif (lev == "Hard" or lev == "hard" or lev == "d" or lev == "HARD" or lev=="hrd"):
             a=d.steps(data)
             a.sdiff()
         else:

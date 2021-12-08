@@ -2,7 +2,18 @@ import pandas as pd
 import unittest
 from unittest.mock import patch
 from recipes.Veg import intermediate as mv
+import recipes.Veg.veg as nve
+
 class TestVegMedium(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(cls):
+        print('setupClass')
+        
+    @classmethod
+    def tearDownClass(cls):
+        print('teardownClass')
+        
     def setUp(self):
         self.x=pd.read_csv("Recipes.csv")
         TestVegMedium.a=mv.medium(self.x)
@@ -28,3 +39,18 @@ class TestVegMedium(unittest.TestCase):
         self.assertIn("Corn and cheese", result2)
         self.assertIn("Fried noodles", result2)
         self.assertIn("White sauce pasta", result2)
+    z = ["Easy", "Medium", "Hard", "easy", "medium", "hard", "EASY", "MEDIUM", "HARD", "e", "m" ,"h", "eas", "med", "hrd"]
+    @patch('builtins.input',return_value=z)
+        
+    def test_veg_level(self,mock_input):
+        result= nve.level()
+        self.assertIn("Medium", result)
+        self.assertIn("m", result)
+        self.assertIn("MEDIUM", result)
+        self.assertIn("medium", result)
+        self.assertIn("med", result)
+    
+    def tearDown(self):
+        print("Tear down")
+        
+unittest.main(argv=[''], verbosity=2, exit=False)
